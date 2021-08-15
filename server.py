@@ -35,5 +35,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             w = csv.writer(csvfile, delimiter=',', quoting=csv.QUOTE_MINIMAL)
             for row in all_data:
                 row = row.split(",")
-                print("ROW: ", row)
                 w.writerow(row)
